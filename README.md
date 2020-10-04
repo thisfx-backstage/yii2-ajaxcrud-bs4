@@ -1,7 +1,9 @@
 yii2-ajaxcrud 
 =============
 
-This is not my work, this repository created by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud), but because I (and maybe some other people) need to optimize this Gii Template with BS4, so I create new repository to accomodate it. If [johitvn](https://github.com/johnitvn/yii2-ajaxcrud) already merge my PR, I will delete this repository.
+Original work by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud)
+But we need to work with Bootstrap 4, so we create this repository. If [johitvn](https://github.com/johnitvn/yii2-ajaxcrud) update his repo, we will delete this repository.
+
 
 [![Latest Stable Version](https://poser.pugx.org/johnitvn/yii2-ajaxcrud/v/stable)](https://packagist.org/packages/johnitvn/yii2-ajaxcrud)
 [![License](https://poser.pugx.org/johnitvn/yii2-ajaxcrud/license)](https://packagist.org/packages/johnitvn/yii2-ajaxcrud)
@@ -18,6 +20,7 @@ Features
 + Bulk delete suport
 + Pjax widget suport
 + Export function(pdf,html,text,csv,excel,json)
++ Support Boostrap 4
 
 Installation
 ------------
@@ -27,13 +30,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist hoaaah/yii2-ajaxcrud-bs4 "*"
+php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "*"
 ```
 
 or add
 
 ```
-"hoaaah/yii2-ajaxcrud-bs4": "*"
+"biladina/yii2-ajaxcrud-bs4": "*"
 ```
 
 to the require section of your `composer.json` file.
