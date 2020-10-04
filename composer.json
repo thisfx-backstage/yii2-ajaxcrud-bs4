@@ -1,5 +1,5 @@
 {
-    "name": "hoaaah/yii2-ajaxcrud-bs4",
+    "name": "biladina/yii2-ajaxcrud-bs4",
     "description": "Gii CRUD template for Single Page Ajax Administration for yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","ajax","crud","gii","template","database"],
