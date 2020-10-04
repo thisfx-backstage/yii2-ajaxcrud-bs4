@@ -1,7 +1,8 @@
 yii2-ajaxcrud 
 =============
 
-Original work by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud)
+Original work by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud).
+
 But we need to work with Bootstrap 4, so we create this repository. If [johitvn](https://github.com/johnitvn/yii2-ajaxcrud) update his repo, we will delete this repository.
 
 
@@ -21,6 +22,7 @@ Features
 + Pjax widget suport
 + Export function(pdf,html,text,csv,excel,json)
 + Support Boostrap 4
+
 
 Installation
 ------------
@@ -42,6 +44,7 @@ or add
 to the require section of your `composer.json` file.
 
 
+
 Usage
 -----
 For first you must enable Gii module Read more about [Gii code generation tool](http://www.yiiframework.com/doc-2.0/guide-tool-gii.html)
@@ -49,13 +52,13 @@ For first you must enable Gii module Read more about [Gii code generation tool](
 Because this extension used [kartik-v/yii2-grid](https://github.com/kartik-v/yii2-grid) extensions so we must config gridview module before
 
 Let 's add into modules config in your main config file
-````php
+```php
 'modules' => [
     'gridview' =>  [
         'class' => '\kartik\grid\Module'
     ]       
 ]
-````
+```
 
 You can then access Gii through the following URL:
 
@@ -63,6 +66,22 @@ http://localhost/path/to/index.php?r=gii
 
 and you can see <b>Ajax CRUD Generator</b>
 
-Other Links
-[Free download wordpress theme](https://w3deep.com/wordpress-theme/)
-[Free download html template](https://w3deep.com/html-template/)
+
+
+Translate
+---------
+Default translation is english, you can pull request new translation and you can change via config. Open your config `main.php`, add new translation to components..
+
+```php
+'components' => [
+    'i18n' => [
+        'translations' => [
+            'yii2-ajaxcrud' => [
+                'class' => 'yii\i18n\PhpMessageSource',
+                'basePath' => '@hoaaah/ajaxcrud/messages',
+                'sourceLanguage' => 'id',
+            ],
+        ]
+    ]
+]
+```
