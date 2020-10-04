@@ -3,6 +3,7 @@
 namespace hoaaah\ajaxcrud;
 
 use yii\web\AssetBundle;
+use Yii;
 
 /**
  * @author John Martin <john.itvn@gmail.com>
@@ -38,5 +39,14 @@ class CrudAsset extends AssetBundle
        ];
 
        parent::init();
+
+      if (!isset(Yii::$app->i18n->translations['yii2-ajaxcrud']))
+      {
+        Yii::$app->i18n->translations['yii2-ajaxcrud'] = [
+          'class' => 'yii\i18n\PhpMessageSource',
+          'basePath' => '@hoaaah/ajaxcrud/messages',
+          'sourceLanguage' => 'en',
+        ];
+      }
    }
 }
