@@ -2,7 +2,7 @@
 
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
-use yii\bootstrap\Modal;
+use yii\bootstrap4\Modal;
 use yii\helpers\Url;
 use yii\helpers\Html;
 
@@ -16,7 +16,7 @@ echo "<?php\n";
 ?>
 use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\bootstrap\Modal;
+use yii\bootstrap4\Modal;
 use kartik\grid\GridView;
 use hoaaah\ajaxcrud\CrudAsset; 
 use hoaaah\ajaxcrud\BulkButtonWidget;
@@ -41,10 +41,10 @@ CrudAsset::register($this);
             'columns' => require(__DIR__.'/_columns.php'),
             'toolbar'=> [
                 ['content'=>
-                    Html::a('<i class="glyphicon glyphicon-plus"></i>', ['create'],
-                    ['role'=>'modal-remote','title'=> 'Create new <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-default']).
-                    Html::a('<i class="glyphicon glyphicon-repeat"></i>', [''],
-                    ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid']).
+                    Html::a(Yii::t('yii2-ajaxcrud', 'Create New'), ['create'],
+                    ['role'=>'modal-remote','title'=> Yii::t('yii2-ajaxcrud', 'Create New').' <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-outline-primary']).
+                    Html::a('<i class="fa fa-redo"></i>', [''],
+                    ['data-pjax'=>1, 'class'=>'btn btn-outline-success', 'title' => Yii::t('yii2-ajaxcrud', 'Reset Grid')]).
                     '{toggleData}'.
                     '{export}'
                 ],
@@ -53,19 +53,19 @@ CrudAsset::register($this);
             'condensed' => true,
             'responsive' => true,          
             'panel' => [
-                'type' => 'primary', 
-                'heading' => '<i class="glyphicon glyphicon-list"></i> <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?> listing',
-                'before'=>'<em>* Resize table columns just like a spreadsheet by dragging the column edges.</em>',
+                'type' => 'default', 
+                'heading' => '<i class="fa fa-list"></i> <b>'.$this->title.'</b>',
+                'before'=>'<em>* '.Yii::t('yii2-ajaxcrud', 'Resize Column').'</em>',
                 'after'=>BulkButtonWidget::widget([
-                            'buttons'=>Html::a('<i class="glyphicon glyphicon-trash"></i>&nbsp; Delete All',
+                            'buttons'=>Html::a('<i class="fa fa-trash"></i>&nbsp; '.Yii::t('yii2-ajaxcrud', 'Delete All'),
                                 ["bulkdelete"] ,
                                 [
                                     "class"=>"btn btn-danger btn-xs",
                                     'role'=>'modal-remote-bulk',
                                     'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
                                     'data-request-method'=>'post',
-                                    'data-confirm-title'=>'Are you sure?',
-                                    'data-confirm-message'=>'Are you sure want to delete this item'
+                                    'data-confirm-title' => Yii::t('yii2-ajaxcrud', 'Delete'),
+                                    'data-confirm-message' => Yii::t('yii2-ajaxcrud', 'Delete Confirm')
                                 ]),
                         ]).                        
                         '<div class="clearfix"></div>',
@@ -74,8 +74,16 @@ CrudAsset::register($this);
     </div>
 </div>
 <?='<?php Modal::begin([
-    "id"=>"ajaxCrudModal",
-    "footer"=>"",// always need it for jquery plugin
+    "id" => "ajaxCrudModal",
+    "footer" => "", // always need it for jquery plugin
+    "clientOptions" => [
+        "tabindex" => false,
+        "backdrop" => "static",
+        "keyboard" => false,
+    ],
+    "options" => [
+        "tabindex" => false
+    ]
 ])?>'."\n"?>
 <?='<?php Modal::end(); ?>'?>
 

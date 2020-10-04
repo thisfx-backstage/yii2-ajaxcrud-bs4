@@ -2,7 +2,7 @@
 
 use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\bootstrap\Modal;
+use yii\bootstrap4\Modal;
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
 
@@ -53,18 +53,21 @@ return [
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,
-        'vAlign'=>'middle',
+        'noWrap' => 'true',
+        'template' => '{view} {update} {delete}',
+        'vAlign' => 'middle',
         'urlCreator' => function($action, $model, $key, $index) { 
                 return Url::to([$action,'<?=substr($actionParams,1)?>'=>$key]);
         },
-        'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
-        'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],
-        'deleteOptions'=>['role'=>'modal-remote','title'=>'Delete', 
-                          'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
-                          'data-request-method'=>'post',
-                          'data-toggle'=>'tooltip',
-                          'data-confirm-title'=>'Are you sure?',
-                          'data-confirm-message'=>'Are you sure want to delete this item'], 
+        'viewOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'View'), 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-outline-success'],
+        'updateOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'Update'), 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-outline-primary'],
+        'deleteOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'Delete'), 'class' => 'btn btn-sm btn-outline-danger', 
+                          'data-confirm' => false,
+                          'data-method' => false,// for overide yii data api
+                          'data-request-method' => 'post',
+                          'data-toggle' => 'tooltip',
+                          'data-confirm-title' => Yii::t('yii2-ajaxcrud', 'Delete'),
+                          'data-confirm-message' => Yii::t('yii2-ajaxcrud', 'Delete Confirm') ], 
     ],
 
 ];   
