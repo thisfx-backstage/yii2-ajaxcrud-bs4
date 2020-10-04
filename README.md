@@ -12,7 +12,15 @@ But we need to work with Bootstrap 4, so we create this repository. If [johitvn]
 
 Gii CRUD template for Single Page Ajax Administration for yii2 
 
-![yii2 ajaxcrud extension screenshot](https://c1.staticflickr.com/1/330/18659931433_6e3db2461d_o.png "yii2 ajaxcrud extension screenshot")
+![index](https://images2.imagebam.com/3f/78/46/55b13c1355690747.png "index")
+
+![create](https://images2.imagebam.com/37/59/af/5af93f1355690748.png "create")
+
+![view](https://images2.imagebam.com/dd/11/29/b7c7361355690749.png "view")
+
+![update](https://images2.imagebam.com/80/d7/31/3b9f601355690751.png "update")
+
+![delete](https://images2.imagebam.com/b0/98/11/a716401355690754.png "delete")
 
 
 Features
@@ -73,6 +81,8 @@ Translate
 Default translation is english, you can pull request new translation and you can change via config. Open your config `main.php`, add new translation to components..
 
 ```php
+'language' => 'id-ID',
+
 'components' => [
     'i18n' => [
         'translations' => [
