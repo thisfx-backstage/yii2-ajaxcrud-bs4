@@ -80,6 +80,10 @@ Translate
 ---------
 Default translation is english, you can pull request new translation and you can change via config. Open your config `main.php`, add new translation to components..
 
+Available Translation :
++ English
++ Indonesia
+
 ```php
 'language' => 'id-ID',
 
