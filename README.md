@@ -40,13 +40,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "^1.0"
+php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "~1.0"
 ```
 
 or add
 
 ```
-"biladina/yii2-ajaxcrud-bs4": "^1.0"
+"biladina/yii2-ajaxcrud-bs4": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
