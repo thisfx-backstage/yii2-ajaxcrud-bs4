@@ -218,7 +218,7 @@ class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->bas
                         'model' => $model,
                     ]),
                     'footer'=> Html::button(Yii::t('yii2-ajaxcrud', 'Close'), ['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button(Yii::t('yii2-ajaxcrud', 'Simpan'), ['class'=>'btn btn-primary','type'=>"submit"])
+                                Html::button(Yii::t('yii2-ajaxcrud', 'Save'), ['class'=>'btn btn-primary','type'=>"submit"])
                 ];        
             }
         }else{
