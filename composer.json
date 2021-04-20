@@ -9,6 +9,14 @@
             "name": "John Martin",
             "email": "john.itvn@gmail.com",
             "homepage": "https://github.com/johnitvn?tab=repositories"
+        },
+        {
+            "name": "hoaaah",
+            "homepage": "https://github.com/hoaaah"
+        },
+        {
+            "name": "Biladia Inc.",
+            "homepage": "https://github.com/biladina"
         }
     ],
     "support": {
@@ -25,10 +33,10 @@
     },
     "autoload": {
         "psr-4": {
-            "hoaaah\\ajaxcrud\\": "src/"
+            "yii2ajaxcrud\\ajaxcrud\\": "src/"
         }
     },
     "extra": {
-        "bootstrap": "hoaaah\\ajaxcrud\\Bootstrap"
+        "bootstrap": "yii2ajaxcrud\\ajaxcrud\\Bootstrap"
     }
 }

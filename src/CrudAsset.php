@@ -1,6 +1,6 @@
 <?php 
 
-namespace hoaaah\ajaxcrud;
+namespace yii2ajaxcrud\ajaxcrud;
 
 use yii\web\AssetBundle;
 use Yii;
@@ -44,7 +44,7 @@ class CrudAsset extends AssetBundle
       {
         Yii::$app->i18n->translations['yii2-ajaxcrud'] = [
           'class' => 'yii\i18n\PhpMessageSource',
-          'basePath' => '@hoaaah/ajaxcrud/messages',
+          'basePath' => '@yii2ajaxcrud/ajaxcrud/messages',
           'sourceLanguage' => 'en',
         ];
       }

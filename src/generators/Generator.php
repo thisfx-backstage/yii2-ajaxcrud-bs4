@@ -1,5 +1,5 @@
 <?php
-namespace hoaaah\ajaxcrud\generators;
+namespace yii2ajaxcrud\ajaxcrud\generators;
 
 use Yii;
 use yii\db\ActiveRecord;

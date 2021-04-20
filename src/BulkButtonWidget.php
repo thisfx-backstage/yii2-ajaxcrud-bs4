@@ -1,5 +1,5 @@
 <?php
-namespace hoaaah\ajaxcrud;
+namespace yii2ajaxcrud\ajaxcrud;
 
 use yii\base\Widget;
 use yii\helpers\Html;
