@@ -46,7 +46,7 @@ php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "~2.0"
 or add
 
 ```
-"biladina/yii2-ajaxcrud-bs4": "~1.0"
+"biladina/yii2-ajaxcrud-bs4": "~2.0"
 ```
 
 to the require section of your `composer.json` file.
