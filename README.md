@@ -40,7 +40,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "~1.0"
+php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "~2.0"
 ```
 
 or add
@@ -92,7 +92,7 @@ Available Translation :
         'translations' => [
             'yii2-ajaxcrud' => [
                 'class' => 'yii\i18n\PhpMessageSource',
-                'basePath' => '@hoaaah/ajaxcrud/messages',
+                'basePath' => '@yii2ajaxcrud/ajaxcrud/messages',
                 'sourceLanguage' => 'id',
             ],
         ]
