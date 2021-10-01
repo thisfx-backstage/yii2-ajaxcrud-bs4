@@ -264,6 +264,14 @@ function ModalRemote(modalId) {
             if (response.forceReload == 'true') {
                 // Backwards compatible reload of fixed crud-datatable-pjax
                 $.pjax.reload({container: '#crud-datatable-pjax'});
+            } else if (response.forceReload.indexOf(',') > -1) {
+                // reload multiple pjax with comma separator
+                var pjaxContainers = response.forceReload.split(',');
+
+                $.each(pjaxContainers, function(index, value) {
+                    $.pjax.reload({container: value});
+                    $.pjax.xhr = null;
+                });
             } else {
                 $.pjax.reload({container: response.forceReload});
             }

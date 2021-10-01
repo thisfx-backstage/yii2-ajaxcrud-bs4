@@ -99,3 +99,19 @@ Available Translation :
     ]
 ]
 ```
+
+
+
+Reload Multiple Pjax
+--------------------
+If you need to reload multiple GridView Pjax via Ajax respond from controller, you can add another Pjax ID separated by comma.
+
+```php
+return [
+    'forceReload'=>'#crud-pjax1,#crud-pjax2', // you can add more Pjax ID that you want to reload via ajax respond.
+    'title'=> Yii::t('yii2-ajaxcrud', 'Create New')." Content",
+    'content'=>'<span class="text-success">'.Yii::t('yii2-ajaxcrud', 'Create').' Content '.Yii::t('yii2-ajaxcrud', 'Success').'</span>',
+    'footer'=> Html::button(Yii::t('yii2-ajaxcrud', 'Close'), ['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+        Html::a(Yii::t('yii2-ajaxcrud', 'Create More'), ['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+];
+```
