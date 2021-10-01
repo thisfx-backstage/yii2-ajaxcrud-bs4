@@ -30,6 +30,8 @@ Features
 + Pjax widget suport
 + Export function(pdf,html,text,csv,excel,json)
 + Support Boostrap 4
++ Added translations, available right now only English and Indonesia
++ Reload multiple Pjax
 
 
 Installation
