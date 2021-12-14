@@ -20,8 +20,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/johnitvn/yii2-ajaxcrud/issues?state=open",
-        "source": "https://github.com/johnitvn/yii2-ajaxcrud"
+        "issues": "https://github.com/biladina/yii2-ajaxcrud-bs4/issues?state=open",
+        "source": "https://github.com/biladina/yii2-ajaxcrud-bs4"
     },
     "require": {
         "yiisoft/yii2": "*",
@@ -29,7 +29,8 @@
         "yiisoft/yii2-bootstrap4": "*",
 	    "kartik-v/yii2-grid": "^3.0.4",
         "kartik-v/yii2-mpdf": "^1.0.0",
-        "kartik-v/yii2-editable": "^1.7.3"
+        "kartik-v/yii2-editable": "^1.7.3",
+        "fortawesome/font-awesome": "^5.15"
     },
     "autoload": {
         "psr-4": {

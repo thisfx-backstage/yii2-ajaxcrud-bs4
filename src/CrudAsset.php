@@ -26,6 +26,7 @@ class CrudAsset extends AssetBundle
         'yii\bootstrap4\BootstrapAsset',
         'yii\bootstrap4\BootstrapPluginAsset',
         'kartik\grid\GridViewAsset',
+        'yii2-ajaxcrud\src\FontAwesomeAsset',
     ];
     
    public function init() {
