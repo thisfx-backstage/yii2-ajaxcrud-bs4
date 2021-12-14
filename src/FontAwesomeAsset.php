@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2ajaxcrud\assets;
+namespace yii2ajaxcrud\ajaxcrud;
 
 use yii\web\AssetBundle;
 
