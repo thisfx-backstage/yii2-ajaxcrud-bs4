@@ -19,5 +19,6 @@ return [
     'Reset Grid' => 'Muat Ulang',
     'Resize Column' => 'Ukuran tabel bisa diubah seperti di excel/spreadsheet dengan menarik tepi kolom',
     'Delete All' => 'Hapus',
-    'Delete Confirm' => 'Anda yakin ingin menghapus data ini?'
+    'Delete Confirm' => 'Anda yakin ingin menghapus data ini?',
+    'With selected' => 'Data terpilih'
 ];
