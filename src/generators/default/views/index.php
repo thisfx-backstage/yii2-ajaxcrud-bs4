@@ -42,7 +42,7 @@ CrudAsset::register($this);
             'toolbar'=> [
                 ['content'=>
                     // Html::a(Yii::t('yii2-ajaxcrud', 'Create New'), ['create'],
-                    Html::a('<i class="fa fa-plus"></i>', [''],
+                    Html::a('<i class="fa fa-plus"></i>', ['create'],
                     ['role'=>'modal-remote','title'=> Yii::t('yii2-ajaxcrud', 'Create New').' <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-primary']).
                     // Html::a('<i class="fa fa-redo"></i>', [''],
                     // ['data-pjax'=>1, 'class'=>'btn btn-outline-success', 'title' => Yii::t('yii2-ajaxcrud', 'Reset Grid')]).
