@@ -41,11 +41,12 @@ CrudAsset::register($this);
             'columns' => require(__DIR__.'/_columns.php'),
             'toolbar'=> [
                 ['content'=>
-                    Html::a(Yii::t('yii2-ajaxcrud', 'Create New'), ['create'],
-                    ['role'=>'modal-remote','title'=> Yii::t('yii2-ajaxcrud', 'Create New').' <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-outline-primary']).
-                    Html::a('<i class="fa fa-redo"></i>', [''],
-                    ['data-pjax'=>1, 'class'=>'btn btn-outline-success', 'title' => Yii::t('yii2-ajaxcrud', 'Reset Grid')]).
-                    '{toggleData}'.
+                    // Html::a(Yii::t('yii2-ajaxcrud', 'Create New'), ['create'],
+                    Html::a('<i class="fa fa-plus"></i>', [''],
+                    ['role'=>'modal-remote','title'=> Yii::t('yii2-ajaxcrud', 'Create New').' <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-primary']).
+                    // Html::a('<i class="fa fa-redo"></i>', [''],
+                    // ['data-pjax'=>1, 'class'=>'btn btn-outline-success', 'title' => Yii::t('yii2-ajaxcrud', 'Reset Grid')]).
+                    // '{toggleData}'.
                     '{export}'
                 ],
             ],          
@@ -54,8 +55,9 @@ CrudAsset::register($this);
             'responsive' => true,          
             'panel' => [
                 'type' => 'default', 
-                'heading' => '<i class="fa fa-list"></i> <b>'.$this->title.'</b>',
-                'before'=>'<em>* '.Yii::t('yii2-ajaxcrud', 'Resize Column').'</em>',
+                'heading' => '<i class="fa fa-table"></i> <b>'.$this->title.'</b>',
+                'before' => '',
+                // 'before'=>'<em>* '.Yii::t('yii2-ajaxcrud', 'Resize Column').'</em>',
                 'after'=>BulkButtonWidget::widget([
                             'buttons'=>Html::a('<i class="fa fa-trash"></i>&nbsp; '.Yii::t('yii2-ajaxcrud', 'Delete All'),
                                 ["bulkdelete"] ,
