@@ -70,7 +70,7 @@ return [
         //     'data-confirm-message' => Yii::t('yii2-ajaxcrud', 'Delete Confirm') ],
         'buttons' => [
             'view' => function ($url, $model, $key) {
-                return Html::a('<i class="fa-solid fa-magnifying-glass"></i>', $url, ['class' => 'btn btn-sm btn-success']);
+                return Html::a('<i class="fa-solid fa-magnifying-glass"></i>', $url, ['role' => 'modal-remote', 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-success']);
             },
         ],
     ],
