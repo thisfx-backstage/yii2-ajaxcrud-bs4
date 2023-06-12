@@ -3,6 +3,8 @@ yii2-ajaxcrud
 
 Original work by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud).
 
+Fork from [biladina](https://github.com/biladina/yii2-ajaxcrud-bs4).
+
 But we need to work with Bootstrap 4, so we create this repository. If [johitvn](https://github.com/johnitvn/yii2-ajaxcrud) update his repo, we will delete this repository.
 
 
