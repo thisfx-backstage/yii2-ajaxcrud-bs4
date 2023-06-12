@@ -12,17 +12,6 @@ But we need to work with Bootstrap 4, so we create this repository. If [johitvn]
 
 Gii CRUD template for Single Page Ajax Administration for yii2 
 
-![index](https://images2.imagebam.com/3f/78/46/55b13c1355690747.png "index")
-
-![create](https://images2.imagebam.com/37/59/af/5af93f1355690748.png "create")
-
-![view](https://images2.imagebam.com/dd/11/29/b7c7361355690749.png "view")
-
-![update](https://images2.imagebam.com/80/d7/31/3b9f601355690751.png "update")
-
-![delete](https://images2.imagebam.com/b0/98/11/a716401355690754.png "delete")
-
-
 Features
 ------------
 + Create, read, update, delete in onpage with Ajax
@@ -42,13 +31,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist biladina/yii2-ajaxcrud-bs4 "~2.0"
+php composer.phar require thisfx-backstage/yii2-ajaxcrud-bs4
 ```
 
 or add
 
 ```
-"biladina/yii2-ajaxcrud-bs4": "~2.0"
+"thisfx-backstage/yii2-ajaxcrud-bs4"
 ```
 
 to the require section of your `composer.json` file.
