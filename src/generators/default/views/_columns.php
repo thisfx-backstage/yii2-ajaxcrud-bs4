@@ -23,11 +23,11 @@ use yii\helpers\Url;
 return [
     [
         'class' => 'kartik\grid\CheckboxColumn',
-        'width' => '20px',
+        // 'width' => '20px',
     ],
     [
         'class' => 'kartik\grid\SerialColumn',
-        'width' => '30px',
+        // 'width' => '30px',
     ],
     <?php
     $count = 0;
@@ -36,16 +36,19 @@ return [
             echo "    // [\n";
             echo "        // 'class'=>'\kartik\grid\DataColumn',\n";
             echo "        // 'attribute'=>'" . $name . "',\n";
+            echo "        // 'vAlign'=>'middle',\n";
             echo "    // ],\n";
         } else if (++$count < 6) {
             echo "    [\n";
             echo "        'class'=>'\kartik\grid\DataColumn',\n";
             echo "        'attribute'=>'" . $name . "',\n";
+            echo "        // 'vAlign'=>'middle',\n";
             echo "    ],\n";
         } else {
             echo "    // [\n";
             echo "        // 'class'=>'\kartik\grid\DataColumn',\n";
             echo "        // 'attribute'=>'" . $name . "',\n";
+            echo "        // 'vAlign'=>'middle',\n";
             echo "    // ],\n";
         }
     }
@@ -59,7 +62,7 @@ return [
         'urlCreator' => function($action, $model, $key, $index) { 
                 return Url::to([$action,'<?=substr($actionParams,1)?>'=>$key]);
         },
-        'viewOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'View'), 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-info'],
+        // 'viewOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'View'), 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-info'],
         // 'updateOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'Update'), 'data-toggle' => 'tooltip', 'class' => 'btn btn-sm btn-outline-primary'],
         // 'deleteOptions' => ['role' => 'modal-remote', 'title' => Yii::t('yii2-ajaxcrud', 'Delete'), 'class' => 'btn btn-sm btn-outline-danger', 
         //     'data-confirm' => false,
