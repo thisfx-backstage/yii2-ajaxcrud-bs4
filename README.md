@@ -1,5 +1,5 @@
-yii2-ajaxcrud 
-=============
+yii2-ajaxcrud-bs4 
+=================
 
 Original work by [johitvn](https://github.com/johnitvn/yii2-ajaxcrud).
 
