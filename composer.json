@@ -1,5 +1,5 @@
 {
-    "name": "thisfxBackstage/yii2-ajaxcrud-bs4",
+    "name": "thisfx-backstage/yii2-ajaxcrud-bs4",
     "description": "Gii CRUD template for Single Page Ajax Administration for yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","ajax","crud","gii","template","database"],
@@ -19,13 +19,13 @@
             "homepage": "https://github.com/biladia"
         },
         {
-            "name": "thisfxBackstage",
-            "homepage": "https://github.com/thisfxBackstage"
+            "name": "thisfx-backstage",
+            "homepage": "https://github.com/thisfx-backstage"
         }
     ],
     "support": {
-        "issues": "https://github.com/thisfxBackstage/yii2-ajaxcrud-bs4/issues?state=open",
-        "source": "https://github.com/thisfxBackstage/yii2-ajaxcrud-bs4"
+        "issues": "https://github.com/thisfx-backstage/yii2-ajaxcrud-bs4/issues?state=open",
+        "source": "https://github.com/thisfx-backstage/yii2-ajaxcrud-bs4"
     },
     "require": {
         "yiisoft/yii2": "*",
